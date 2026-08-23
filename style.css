@@ -1,5 +1,6 @@
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 
@@ -11,12 +12,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .bedRoom, .temp{
     background-color: #23242b;
     padding: 10px;
-    width: 385px;
+    width: 340px;
     border-radius: 5px;
     margin: 5px;
 }
@@ -27,7 +29,7 @@ body{
 }
 
 .bedRoom img{
-    width: 350px;
+    width: 300px;
 }
 
 .bedRoom img,.imgContent{
@@ -111,6 +113,7 @@ input:checked + .slider:before {
 .home{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -172,6 +175,8 @@ background-color: #546ddd93;
 .organizer{
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
 }
 
 .my_rooms{
@@ -179,8 +184,7 @@ background-color: #546ddd93;
     background-image: linear-gradient(to top right,#0f1013, #23242b 20%, #0f1013);
     max-width: 800px;
     border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
+    padding: 0;
     position: sticky;
     top: 0;
 }
@@ -289,7 +293,7 @@ background-color: #546ddd93;
 .navForMyrooms_part{
     background-image: linear-gradient(to top right, #23242b 35%, #0f1013);
     border-radius: 5px;
-    padding: 1px;
+    padding: 5px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -300,7 +304,7 @@ background-color: #546ddd93;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
-    width: 350px;
+    width: 340px;
 }
 
 .temp_controler{
@@ -457,4 +461,12 @@ td{
     background-color: #ff5044;
     border: 2px solid #ff5044;
     margin: 0;
+}
+
+.secondSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
