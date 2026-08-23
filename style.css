@@ -1,0 +1,460 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #0f1013;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bedRoom, .temp{
+    background-color: #23242b;
+    padding: 10px;
+    width: 385px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.bedRoomControls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bedRoom img{
+    width: 350px;
+}
+
+.bedRoom img,.imgContent{
+    border-radius: 5px;
+}
+
+.switch {
+ font-size: 17px;
+ position: relative;
+ display: inline-block;
+ width: 40px;
+ height: 25px;
+}
+
+.switch input {
+ opacity: 1;
+ width: 0;
+ height: 0;
+}
+
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0px;
+ background: #fff;
+ transition: .4s;
+ border-radius: 30px;
+ border: 1px solid #ccc;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 1.3em;
+ width: 1.3em;
+ border-radius: 16px;
+ left: 1px;
+ top: 0;
+ bottom: 0;
+ background-color: white;
+ box-shadow: 0 2px 5px #999999;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: #546ddd;
+ border: 1px solid transparent;
+}
+
+input:checked + .slider:before {
+ transform: translateX(1.1em);
+}
+
+
+.temp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 140px;
+}
+.temp img{
+    width: 100px;
+}
+
+.tempInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tempInfo P{
+    margin: 0;
+}
+
+.tempC{
+    font-size: 40px;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.CardsUnderTemp{
+    background-color: #23242b;
+    padding: 10px;
+    width: 108px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.CardsUnderTemp div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.themes{
+    display: flex;
+}
+
+.part1,.part2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part1 p{
+    font-size: 20px;
+}
+.part1 button{
+    border: none;
+    padding: 5px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.part1 .Edit{
+background-color: #3b3d49;
+}
+
+.part1 .Edit:hover{
+background-color: #3b3d49a8;
+}
+
+.part1 .add{
+background-color: #546ddd;
+}
+
+.part1 .add:hover{
+background-color: #546ddd93;
+}
+
+.organizer{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.my_rooms{
+    background-color: #23242b;
+    background-image: linear-gradient(to top right,#0f1013, #23242b 20%, #0f1013);
+    max-width: 800px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.part2{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.part2 a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 200ms ease;
+}
+
+
+.part2 a:hover{
+    color: #546ddd;
+    font-size: 17px;
+}
+.part2 a:focus{
+    color: #546ddd;
+    font-size: 17px;
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.contentPart2forparts{
+    height: 310px;
+    width: 310px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contentPart2{
+    margin: 10px;
+    background-color: #3b3d49;
+    display: flex;
+    border-radius: 5px;
+}
+
+
+
+.contentPart2forparts .contentPart2 h3{
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.contentPart2forparts .contentPart2 p{
+    color: #999999;
+    margin: 5px 0;
+}
+
+.contentPart2forparts .contentPart2 div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.imgContent{
+    height: 200px;
+    margin: 15px auto;
+}
+
+.imgorganizer{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.imgorganizer img{
+    height: 70px;
+}
+
+.totalUsage{
+    background-image: linear-gradient(to top right, #3b3d49 1%,#546ddd);
+    border-radius: 5px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imortant{
+    height: 320px;
+    overflow: hidden;
+}
+
+.navForMyrooms_part{
+    background-image: linear-gradient(to top right, #23242b 35%, #0f1013);
+    border-radius: 5px;
+    padding: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.airCond{
+    background-color: #23242b;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: 350px;
+}
+
+.temp_controler{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.temp_controler p , .organizerFortemppart p{
+    color: #999999;
+}
+
+.organizerFortemppart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.organizerFortemppart input[type="number"]::-webkit-inner-spin-button,
+.organizerFortemppart input[type="number"]::-webkit-outer-spin-button{
+    background-color: #fafafa00;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.temperatureINPUT{
+    background-color: #fafafa00;
+    border-color: #546ddd;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
+.bar{
+    width: 250px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #18181b;
+    display: flex;
+    align-items: center;
+}
+
+.sliderForbar{
+    background-image: linear-gradient(to right, #002491 , #6d04c4 , #ff5044);
+    border-radius: 5px;
+    width: 120px;
+    height: 20px;
+}
+
+.btns{
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.check {
+    width: 50px;
+    height: 40px;
+    background: #3b3d49;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.check input {
+    display: none;
+}
+
+.check i {
+    font-size: 25px;
+}
+
+.check:has(input:checked) {
+    background: #546ddd;
+}
+
+
+.aorone{
+    border: none;
+    background-color: #002491;
+    color: #FFF;
+    font-size: 25px;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+.aorone:hover{
+    background-color: #546ddd;
+}
+
+.tableOrganizer{
+    box-sizing: border-box;
+    width: 360px;
+    background-color: #23242b;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.tableOrganizer div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tableOrganizer div button{
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #546ddd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.tableOrganizer div button:hover{
+    background-color: #6d04c4;
+}
+
+td{
+    border: 2px solid #546ddd;
+    width: 30px;
+    height: 30px;
+}
+
+.barGraph{
+    background-color: #ff5044;
+    border: 2px solid #ff5044;
+    margin: 0;
+}
